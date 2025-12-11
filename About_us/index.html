@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assests/meme.jpg">
+    <title>TIMEPASS</title>
+</head>
+<body>
+    <video id="background-video" loop  autoplay playsinline muted>
+        <source src="assests/rat_dancing.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar">
+        <audio src="assests/song.mp3" loop controls playsinline></audio>
+        <center>
+        <h1 class="heading">HTML ONLY</h1>
+        </center>
+    </nav>
+    <details>
+        <summary>content</summary><ul>
+            <ol><a href="#what">What is this?</a></ol>
+            <ol><a href="#how">How does this work?</a><ol>
+                <ol><a href="#but">But why?</a></ol>
+    </ul>
+    </details>
+
+    <section id="what">
+        <h2>What is this?</h2>
+        <p>This page was inspired by a tweet from Salma . Pretty HTML only pages are difficult to make well, and accessible. But here we are. I'm trying my best.</p>
+    </section>
+    <br>
+    <section id="how">
+        <h2>How does this work?</h2>
+        <p>The key to a lot of this is leveraging using tables with a role="presentation" attribute to make decorated sections without css. If you view source on the page, you'll see that there are a LOT of tables. The table tag typically is used to display tabular data and should NOT be used as a layout method. However, since I am not allowed to use CSS, I am pretty much exclusively relying on tables for this purpose. The presentation role tells the browser to not expose the table and its tabluar children in the accessibility tree. This will make it easier to navigate for assistive technology.
+            I'm also leveraging some deprecated HTML elements from HTML 3.2 that you should never use. In order to be "compliant", I've added the HTML 3.2 doctype at the top of the page:
+        </p>
+    </section>
+    <br>
+    <section id="but">
+        <h2>But why?</h2>
+        <center>
+            <img src="assests/meme.jpg" alt="slow internet.png" height=300px width=330px>
+        </center>
+        <p>I make terrible things. This was an exciting nerd snipe on a sunday, And I took up the challenge!</p>
+    </section>
+    <footer>
+        <h1>want to download background video</h1>
+        <a href="assests/rat_dancing.mp4" target="_blank">click here</a>
+        <center>
+        created by
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"target="_self">tejasvi bajaj</a>
+        </center>
+    </footer>
+    <marquee behavior="alternate" direction="left">Thank's for checking out my website</marquee>
+
+</body>
+</html>

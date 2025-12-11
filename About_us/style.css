@@ -1,0 +1,62 @@
+#background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+nav{
+   background-color: black;
+   height: 60px;
+   padding:20px;
+   border-bottom-left-radius: 60px;
+   border-bottom-right-radius: 60px;
+   border: white dotted 5px;
+   display: flex;
+   margin-right: 30px;
+
+}
+footer{
+   background-color: black;
+   border-top-left-radius: 60px;
+   border-top-right-radius: 60px;
+   border: white dotted 5px;
+
+}
+marquee{
+   background-color: blue;
+   height: 30px;
+   border: black 5px dotted;
+}
+audio::-webkit-media-controls-panel {
+  background-color: orange; /* Change to your desired color */
+}
+h1{
+   color: darkcyan;
+   font-size: 50px;
+}
+h2{
+   color: aqua;
+}
+*{
+   color:orange;
+   font-size: 25px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+a{
+   text-decoration: none;
+   color: red;
+}
+a:hover{
+   border:3px white dotted;
+}
+img{
+   border-radius: 30px;
+   border:12px dotted purple;
+}

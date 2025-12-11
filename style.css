@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(90deg,grey,white);
+}
+.parent{
+    width: 80%;
+    height: 90%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(66, 42, 109);
+    color: white;
+    box-shadow: 5px 5px 20px black;
+}
+.parent nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    height: 15%;
+    background: linear-gradient(200deg,black,grey,white,black);
+}
+nav h1{
+    font-size: 35px;
+    font-weight:600;
+    margin-left: 40px;
+    color:purple;
+    position:relative;
+}
+nav h1::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: -40%;
+    transform: translateY(-50%);
+    background:linear-gradient(90deg,rgb(28,9,114),rgb(214,214,255));
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+ul li #sub{
+    background-image:linear-gradient(90deg,rgb(255, 124, 124),rgb(101, 0, 0),rgb(255, 124, 124));
+    background-size: 200% auto;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px 30px;
+    text-align: center;
+    transition: 0.5s;
+
+}
+ul li #sub:hover{
+    background-position: right center;
+}
+.parent .main_content{
+    display: flex;
+    height: 85%;
+}
+.main_content .left{
+    width: 50%;
+    height: 100%;
+    padding: 40px 80px;
+}
+.left h3{
+    font-weight: 600;
+    font-size:25px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.left h1{
+    font-weight: 600;
+    font-size: 55px;
+    margin-bottom: 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+.left h1 span{
+    color: yellow;
+}
+.left p{
+    font-size:12px;
+    font-weight: 400;
+}
+.left button{
+    outline: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+    letter-spacing: 1px;
+    cursor:pointer;
+    margin: 40px;
+    background: darkblue;
+    color: white;
+    transition: 0.5s ease;
+}
+.left button:hover{
+    background-color: purple;
+    box-shadow: 0 0 0 5px white;
+}
+.main_content .right{
+    width: 60%;
+    height: 100%;
+    padding-left: 100px;
+    overflow: hidden;
+}
+.right img{
+    width: 380px;
+    transform:translateY(-30px);
+    filter:saturate(120%);
+
+}
+.gradient{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 14%;
+    left: 60%;
+    background-color: plum;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(50px);
+    box-shadow: plum,purple;
+    overflow: hidden;
+}
